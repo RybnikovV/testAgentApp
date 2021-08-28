@@ -1,0 +1,69 @@
+.form {
+    min-width: 500px;
+
+    &__item {
+        padding-bottom: 12px;
+    }
+
+    &__input {
+        min-width: 300px;
+        padding: 6px;
+        border: 1px solid #D5DEEB;
+        &:focus {
+            outline: #609AEB solid 2px;
+        }
+    }
+
+    &__describe {
+        font-weight: 500;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        padding: 12px 12px;
+        background-color: #1CA1C1;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: #1C85C4;
+        }
+        &:disabled{
+            opacity: .3;
+            cursor: auto;
+        }
+    }
+}
+
+input{
+    &.ng-invalid.ng-touched{
+        border: 1px solid #C4453A;
+    }
+    &.ng-invalid.ng-touched:focus {
+        outline: #C4453A solid 2px;
+    }
+}
+
+.calculated-tariff{
+    min-width: 500px;
+    &__title{
+        padding: 12px;
+    }
+    &__content{
+        border: 1px solid #D5DEEB;
+    }
+    &__item{
+        padding: 6px 12px;
+        border-bottom: 1px solid #D5DEEB;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &__subtitle{
+        padding: 6px 12px;
+        border-bottom: 1px solid #D5DEEB;
+        background-color: #F4F5F9;
+        font-weight: 600;
+    }
+}
