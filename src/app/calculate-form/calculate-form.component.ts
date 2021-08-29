@@ -9,9 +9,9 @@ import { calcTariff } from './calc-tariff'
 })
 export class CalculateFormComponent implements OnInit {
   form: FormGroup = new FormGroup({
-    killometers: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d?$")]),
-    age: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d?$")]),
-    baggageWeight: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d?$")])
+    killometers: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d*$")]),
+    age: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d*$")]),
+    baggageWeight: new FormControl('', [Validators.required, Validators.pattern("^[1-9]\\d*$")])
   });
   calculatedData: any = {
     planeTariff: [],
